@@ -5,7 +5,6 @@ import java.util.*;
  */
 
 public class Fibonacci {
-    static Map <Integer, Long> cache = new HashMap<>();
 
     public static void main(String[] args){
         int[] inputsToTest = new int[]{8, 32, 43};
@@ -18,8 +17,6 @@ public class Fibonacci {
             output = RunFibonacci(input);
             endTime = System.nanoTime();
             System.out.println( "RunFibonacci("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
-
-            cache.clear();
             System.out.println( "------------------------------" );
         }
     }
