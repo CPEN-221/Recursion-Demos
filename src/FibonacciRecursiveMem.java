@@ -60,7 +60,7 @@ public class FibonacciRecursiveMem {
             cache.put(1, 1L);
             return 1;
         } else {                    // recursive step
-            long result = RunFibonacciRecursive(n-1) + RunFibonacciRecursive(n-2);
+            long result = RunFibonacciRecursiveMem(n-1) + RunFibonacciRecursiveMem(n-2);
             cache.put(n, result);
             return result;
         }
